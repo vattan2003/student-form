@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form </title>
+</head>
+
+<body>
+
+    <center>
+        <h1>Student Form</h1>
+        <table border="2">
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" id="name" style="outline: none;width: 97%;"></td>
+            </tr>
+            <tr>
+                <td><label for="">Age</label></td>
+                <td><input type="number" id="age"style="outline: none;width: 97%;"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td>
+                    
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">FeMale</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="">Language</label></td>
+                <td>
+                    <input type="checkbox" id="tamil" name="language" value="tamil" style="border: none; >
+                    <label for="tamil">Tamil</label>
+
+                    <input type="checkbox" id="english" name="language" value="english">
+                    <label for="english">English</label>
+
+                    <input type="checkbox" id="hindi" name="language" value="hindi">
+                    <label for="hindi">Hindi</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" id="email"style="outline: none;width: 97%;"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button onclick='saveRecord()' style="width: 100%;background-color:greenyellow;color:black; border:none; border-radius: 30px;" >Submit</button></td>
+            </tr>
+        </table>
+            <br><br>
+        <table border="2" id="rec_table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Language</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+        </table>
+    </center>
+
+    <script src="./demo.js"></script>
+</body>
+
+</html>
